@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css">
+    <title>Form</title>
+  </head>
+  <body>
+   <div class="main grid grid-rows-[auto_1fr_auto] sm:w-3/5">
+    <header>
+      <img
+              class="h-16 w-16 mx-auto my-12 sm:h-20 sm:w-20 sm:my-10 lg:h-24 lg:w-24 lg:my-16"
+              src="./assets/abler-logo.svg"
+              alt="abler-logo"
+      />
+    </header>
+    <main>
+      <h1
+              id="header"
+              class="text-lg
+               tracking-tight lg:tracking-normal
+                font-semibold mb-3 sm:mb-5 ml-7
+                 sm:text-2xl lg:mb-10 lg:font-bold
+                  lg:text-5xl"
+      >
+        Welcome
+      </h1>
+      <form name="mainForm">
+        <label class="grid grid-cols-[0px_minmax(200px,_1fr)] lg:my-12" for="email">
+          <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 sm:h-6 sm:w-6 text-grey-50 z-10 justify-self-start self-center ml-6 lg:h-7 lg:w-7"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+          >
+          </svg>
+          <input
+                  id="email"
+                  class="w-full border-b py-3 px-12 sm:px-14 outline-none placeholder:text-sm sm:placeholder:text-lg placeholder:text-grey-50 sm:text-lg text-sm lg:placeholder:text-2xl"
+                  type="email"
+                  placeholder="Email address"
+                  required
+          />
+        </label>
+        <label for="password" class="grid grid-cols-[0px_minmax(200px,_1fr)_0px] lg:mb-10">
+          <div class="relative pl-6 z-10">
+          </div>
+          <input
+                  id="password"
+                  class="
+                   border-b py-3 pl-12
+                   placeholder:text-sm
+                   sm:placeholder:text-lg
+                   placeholder:text-grey-50
+                   text-sm
+                   lg:placeholder:text-2xl"
+                  type="password"
+                  placeholder="Enter password"
+                  minlength="6"
+                  required
+          />
+        </label>
+        <div
+                class="grid grid-cols-[1fr_80px]
+                 sm:grid-cols-[1fr_100px]
+                  lg:grid-cols-[1fr_120px]
+                  py-3 sm:py-7"
+        >
+          <div class="ml-6 grid grid-cols-[25px_1fr]">
+              <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            <a class="text-xs sm:text-sm sm:ml-2 text-grey-50 self-center lg:text-lg" href="#"
+            >Forgot password</a
+            >
+          </div>
+          <button
+                  id="login"
+                  class="border border-grey-50
+                   rounded-full px-4 py-1
+                   text-xs text-grey-50
+                   justify-self-start
+                   self-center lg:text-xl
+                   lg:px-6 lg:py-2"
+          >
+            Login
+          </button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <div class="flex justify-between  bg-grey-10 pt-2 pb-4 sm:py-4">
+        <a class="ml-6" href="#">
+
+        </a>
+        <a class="mr-5 sm:mr-7" href="#">
+          <span class="text-xs sm:text-sm text-grey-50 lg:text-xl">New user</span>
+        </a>
+      </div>
+    </footer>
+   </div>
+
+  <script type="module" src="/main.js"></script>
+  </body>
+</html>
