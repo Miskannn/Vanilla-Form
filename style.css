@@ -16,3 +16,6 @@ input {
     outline: none;
 }
 
+.bg{
+    background-color: lightgray;
+}
