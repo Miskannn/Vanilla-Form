@@ -3,19 +3,27 @@
 @tailwind utilities;
 
 
-html,
-body {
-    height: 100%;
+
+input[type='email']:required:focus:invalid {
+    border-bottom: 1px solid #ba5059;
 }
 
-.main {
-    min-height: 100%;
+input[type='email']:required:valid {
+    border-bottom: 1px solid #5ab98c;
 }
 
-input {
-    outline: none;
+input[type='password']:required:valid {
+    border-bottom: 1px solid #5ab98c;
 }
 
-.bg{
-    background-color: lightgray;
+input[type='text']:required:valid {
+    border-bottom: 1px solid #5ab98c;
+}
+
+input[type='password']:required:focus:invalid {
+    border-bottom: 1px solid #ba5059;
+}
+
+input[type='text']:required:focus:invalid {
+    border-bottom: 1px solid #ba5059;
 }

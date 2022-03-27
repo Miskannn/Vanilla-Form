@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="h-full" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css">
     <title>Form</title>
   </head>
-  <body>
-   <div class="w-full main mx-auto grid grid-rows-[auto_1fr_auto] sm:w-3/5">
+  <body class="h-full">
+   <div class="w-full min-h-full h100 main mx-auto grid grid-rows-[auto_1fr_auto] sm:w-3/5">
     <header>
       <img
               class="h-16 w-16 mx-auto my-12 sm:h-20 sm:w-20 sm:my-10 lg:h-24 lg:w-24 lg:my-16"
@@ -33,7 +33,7 @@
           </svg>
           <input
                   id="email"
-                  class="w-full border-b py-3 px-12 sm:px-14 outline-none placeholder:text-sm sm:placeholder:text-lg placeholder:text-grey-50 sm:text-lg text-sm lg:placeholder:text-2xl"
+                  class="w-full border-b py-3 px-12 outline-none sm:px-14 placeholder:text-sm sm:placeholder:text-lg placeholder:text-grey-50 sm:text-lg text-sm lg:placeholder:text-2xl"
                   type="email"
                   placeholder="Email address"
                   required
@@ -56,7 +56,7 @@
                    placeholder:text-sm
                    sm:placeholder:text-lg
                    placeholder:text-grey-50
-                   text-sm
+                   text-sm outline-none
                    lg:placeholder:text-2xl"
                   type="password"
                   placeholder="Enter password"
@@ -111,7 +111,7 @@
       </form>
     </main>
     <footer>
-      <div class="flex justify-between pt-2 pb-4 sm:py-4 bg">
+      <div class="flex justify-between pt-2 pb-4 sm:py-4 bg-gray-10">
         <a class="ml-6 pt-1" href="#">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-50" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
