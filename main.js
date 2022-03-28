@@ -8,7 +8,7 @@ const eyeOff = document.querySelector("svg[data-icon='eye-off']")
 
 const preventSubmit = e => {
     e.preventDefault();
-    if(email.value === "admin@gmail.com" && password.value === "12345") alert("Success submit");
+    if(email.value === "admin@gmail.com" && password.value === "123456") alert("Success submit");
     else {
         alert("You are not authorized")
     }
