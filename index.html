@@ -26,26 +26,30 @@
       >
         Welcome
       </h1>
-      <form name="mainForm">
-        <label class="grid grid-cols-[0px_minmax(200px,_1fr)] lg:my-12" for="email">
+      <form name="main">
+        <label class="grid grid-cols-[0px_minmax(200px,_1fr)_0px] lg:mb-10" for="email">
           <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-5 w-5 lg:h-6 lg:w-6 text-gray-50 z-10 justify-self-start self-center ml-6 lg:h-7 lg:w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
           </svg>
           <input
                   id="email"
-                  class="w-full border-b py-3 px-12
-                   sm:px-14 outline-none peer
-                   placeholder:text-sm sm:placeholder:text-lg
+                  class="border-b py-3 pl-12
+                   placeholder:text-sm
+                   sm:placeholder:text-lg
                    placeholder:text-grey-50
-                   sm:text-lg text-sm lg:placeholder:text-2xl
+                   text-sm outline-none
+                   lg:placeholder:text-2xl
                    valid:border-success-77 invalid:border-danger-66 placeholder-shown:invalid:border-gray-10"
                   type="email"
                   placeholder="Email address"
                   required
           />
-<!--          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">-->
-<!--            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />-->
-<!--          </svg>-->
+          <svg xmlns="http://www.w3.org/2000/svg" data-icon="success" class="hidden text-gray-50 h-5 w-5 self-center -translate-x-10 lg:h-7 lg:w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" data-icon="fail" class="hidden text-gray-50 h-5 w-5 self-center -translate-x-10 lg:h-7 lg:w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
         </label>
         <label for="password" class="grid grid-cols-[0px_minmax(200px,_1fr)_0px] lg:mb-10">
           <div class="relative pl-6 z-10">

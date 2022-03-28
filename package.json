@@ -2,26 +2,21 @@
   "name": "viter",
   "private": true,
   "version": "0.0.0",
+  "prettier": "prettier-config-standard",
   "scripts": {
     "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "remove": "rimraf dist",
-    "watch": "npx tailwindcss -i ./style.css -o ./dist/output.css --watch",
     "prettier": "prettier -- --write .",
-    "prettier:check": "prettier -- --check .",
-    "lint": "eslint ."
+    "prettier:check": "prettier -- --check ."
   },
   "devDependencies": {
     "autoprefixer": "^10.4.4",
     "postcss": "^8.4.12",
     "prettier": "^2.6.0",
-    "rimraf": "^3.0.2",
+    "prettier-config-standard": "^5.0.0",
+    "prettier-plugin-tailwindcss": "^0.1.8",
     "tailwindcss": "^3.0.23",
     "vite": "^2.8.0"
-  },
-  "dependencies": {
-    "eslint": "^8.11.0",
-    "prettier-plugin-tailwindcss": "^0.1.8"
   }
 }

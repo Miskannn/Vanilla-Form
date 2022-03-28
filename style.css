@@ -4,12 +4,27 @@
 
 
 
-input[type='password'] ~ svg[data-icon='lock-opened'],
+input[type='password'] ~ svg[data-icon='lock-closed'],
 input[type='password'] ~ svg[data-icon='eye'] {
     display: none;
 }
 
-input[type='text'] ~ svg[data-icon='lock-closed'],
+input[type='text'] ~ svg[data-icon='lock-opened'],
 input[type='text'] ~ svg[data-icon='eye-off'] {
     display: none;
 }
+
+form[name="main"]:valid #login{
+    border: 1px solid #5ab98c;
+    background-color: #5ab98c;
+    color: white;
+}
+
+form[name="main"]:focus-within:invalid #login{
+    border: 1px solid #ba5059;
+    background-color: #ba5059;
+    color: white;
+}
+
+
+
