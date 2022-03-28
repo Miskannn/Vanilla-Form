@@ -3,10 +3,8 @@ import {validInput} from "./modules/validation";
 const form = document.forms.mainForm;
 const email = document.getElementById("email");
 const password = document.getElementById("password");
-const unlock = document.getElementById("unlock");
-const login = document.getElementById("login");
-const header = document.getElementById("header");
-
+const eye = document.querySelector("svg[data-icon='eye']")
+const eyeOff = document.querySelector("svg[data-icon='eye-off']")
 
 const preventSubmit = e => {
     e.preventDefault();
@@ -16,3 +14,7 @@ const preventSubmit = e => {
 
 form.addEventListener('submit', preventSubmit);
 form.addEventListener('input', validInput);
+
+
+eye.addEventListener('click', () => password.setAttribute("type","password"));
+eyeOff.addEventListener('click', () => password.setAttribute("type","text"));
