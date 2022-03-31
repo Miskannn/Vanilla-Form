@@ -14,17 +14,5 @@ input[type='text'] ~ svg[data-icon='eye-off'] {
     display: none;
 }
 
-form[name="main"]:valid #login{
-    border: 1px solid #5ab98c;
-    background-color: #5ab98c;
-    color: white;
-}
-
-form[name="main"]:focus-within:invalid #login{
-    border: 1px solid #ba5059;
-    background-color: #ba5059;
-    color: white;
-}
-
 
 
