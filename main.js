@@ -1,6 +1,4 @@
-// import {validInput} from "./modules/validation";
 import './style.css'
-import { validInput } from './modules/validation'
 
 const form = document.forms?.main;
 const header = document.getElementById("header");
